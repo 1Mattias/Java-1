@@ -20,14 +20,18 @@ public class Uppgift4_12 {
 			System.out.println("skriv ett ord");
 			String input = sc.next();
 			System.out.println(rovarsproket(input));
-		*/
+		*/	
 	}
+	
+	//Här räknas endast volymen ut och skickar till baka det
 	
 	public static double volume(double radius ) {
 		
 		return  (4 * Math.PI * Math.pow(radius, 3)) / 3;
 	
 	}
+	
+	//tar din sträng och returnerar det baklänges
 	
 	public static String reverse(String str){  
        String reversed = "";
@@ -37,6 +41,8 @@ public class Uppgift4_12 {
 		
        return reversed;
 	}
+	
+	//räknar hur frekvänt bokstaven "c" förekommer
 	
 	public static int Valuc (String inputMain, Scanner sc){
 		int numbreFoC =0;
@@ -50,7 +56,9 @@ public class Uppgift4_12 {
 		
 	}
 		
-		
+	// Tar in en sträng och gör om den till rövarspråket	
+	
+	
 	public static String rovarsproket(String inputRe){
 		int inputLenght = inputRe.length();
 			String kons = "cdghjklmnpqrstvwxz";
